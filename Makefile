@@ -8,6 +8,8 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+CNAME=jbcabral.org
+
 GITHUB_PAGES_BRANCH=master
 
 
@@ -76,7 +78,7 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR) -c CNAME
+	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR) -c ${CNAME}
 	git push -u --force origin $(GITHUB_PAGES_BRANCH)
 
 sync: github
