@@ -8,7 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-GITHUB_PAGES_BRANCH=master
+GITHUB_PAGES_BRANCH="gh-pages"
 
 
 DEBUG ?= 0
@@ -82,7 +82,7 @@ github: publish
 sync: github
 	git add -A .
 	git commit -am "autosync"
-	git push origin gh-pages
+	git push origin master
 
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish github
