@@ -25,20 +25,38 @@ their community is really active in their [forum](https://groups.google.com/foru
 
 ## Critisism?
 
-oTree is awesome, myself made something like ~12 experiments with the project, so i need to explain
-why I decided to start new .
+oTree is awesome, myself made something like ~12 experiments with this package, so i need to explain
+why I decided to start new paralel project.
 
-1. **Many languages:** oTree is written in Python, thats fine; it's easy, expressive, and with a big community of programmers. So if you want to create an experiment, most of your logic will be written in this language. In other hand, the templates/pages are coded in HTML (With the Django-Templates language)); if you want more interactive templates and custom styles you will ended needing CSS and Javascript. In the end, you will
+1. **Many languages:** oTree is written in Python, thats fine; it's easy, expressive, and with a big community of programmers. So if you want to create an experiment, most of your logic will be written in this language. In other hand, the templates/pages are coded in [HTML](https://en.wikipedia.org/wiki/HTML) (With the [Django-Templates language](https://docs.djangoproject.com/en/2.2/ref/templates/language/)); if you want more interactive templates and custom styles you will ended needing [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) and [Javascript](https://en.wikipedia.org/wiki/JavaScript). In the end, you will need 4 languages to create a moderate complex programs.
 
-2. **Django Hack:**
+2. **Lack of customization:** In many cases, Django is the best out-of-the-box option for develop
+   anything web-related with Python. But when you try to create your own workflow, maybe you have a problem.
 
-3. **Lack of customization:**
+   The main idea of chosen any [framework](https://en.wikipedia.org/wiki/Software_framework), is to avoid to design a your own workflow; the problem starts when you try to design your own framework on top of another one. In other other words: you are trying to design your own *flexible-for-your-use-case-workflow* on top of another *flexible-for-another-more-general-use-case-workflow*.
 
-4. **Experimental features:**
-
-5. **Classes everywhere:**
+   Check this talk [Niklas Meinzer - When Django is too bloated - Specialized Web-Applications with Werkzeug](https://www.youtube.com/watch?v=mXpBuELtpro), for another people with the same problem.
 
 
+3. **Experimental features:** Implement   experimental features is necessary to any projects to live a long and happy life (imagine a parallel universe where a new web version of zTree are launched before oTree).
+
+   All the efforts of the oTree community related to new features are to made a the project most simple to use for non-programmers (oTree studio and oTree Hub). I was a little skeptical about to try to remove the code of the process of making code. Normally you create empty shells will you still need to fill with code.
+
+   In other hand, implement experimental features like artificial intelligence power bots, can be a
+   challenge, modtly because the rigid Synchronous Django-Layer bellow, and the lack of interest or man-power of the community and the core developers.
+
+4. **Classes everywhere:** In january of 2018 I give a full tutorial of Python + oTree in the
+[Bogotá Experimental Economics Workshop](https://www.urosario.edu.co/BEEC-2018/Evento/). Mostly of the contents was easy to explain, except for one concept: **Classes**, object oriented software are useful mostly for the encapsulation property, and in particular for the [MVC pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller). But explain to a non programmer concepts like inheritance, methods, instantiation and state; was the difficult part.
+
+   Django model their entire workflow with classes (models, views, management commands and middleware), and this permeates the design of oTree. In most cases the user only want to define a simple sequential commands, but still they need to define a class (with the proper methods and inheritance).
+
+Avoid this 4 points (or at least try to) is my main goal as a designer of a more modern approach to create behavioral experiments.
+
+
+## Designing a new framework
+
+
+## The Database abstraction layer
 
 ### How i imagine want to use the ORM
 
