@@ -5,6 +5,7 @@ Category: Info
 Tags: pelican, publishing
 Slug: pubs
 Summary: Publications
+Status: published
 
 
 ## My PhD thesis:

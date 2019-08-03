@@ -8,7 +8,7 @@ Summary: Design notes about the Ajiaco ORM
 
 Several years ago i was luckily part of the team that design and developed
 one of the current de facto standard frameworks for experimental economy:
-oTree (http://otree.org); and was a significant
+oTree ([http://otree.org](http://otree.org)); and was a significant
 advancement over the old [z-Tree](https://www.ztree.uzh.ch/en.html)
 
 The project is web-framework developed on top of [Django](https://www.djangoproject.com/), that

@@ -31,3 +31,7 @@ RELATIVE_URLS = True
 THEME = 'themes/elegant'
 
 OUTPUT_PATH = 'output/'
+
+DEFAULT_METADATA = {
+    'status': 'draft',
+}

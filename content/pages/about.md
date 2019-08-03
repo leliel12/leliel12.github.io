@@ -2,9 +2,10 @@ Title: About Me
 Date: 2019-04-08 22:38
 Modified: 2019-04-08 22:38
 Category: Info
-Tags: pelican, publishing
+Tags: academic
 Slug: about-me
 Summary: About-Me
+Status: published
 
 ![Alt Text]({static}/pages/images/me.jpg)
 
