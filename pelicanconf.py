@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-import os
 
 AUTHOR = 'Juan BC'
 SITENAME = 'JBC Personal Webpage'
@@ -32,11 +31,3 @@ RELATIVE_URLS = True
 THEME = 'themes/elegant'
 
 OUTPUT_PATH = 'output/'
-
-SHOW_DRAFTS = os.getenv("SHOW_DRAFTS", None) == "True"
-print(SHOW_DRAFTS)
-
-if not SHOW_DRAFTS:
-    DEFAULT_METADATA = {
-        'status': 'draft',
-    }

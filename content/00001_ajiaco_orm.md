@@ -25,32 +25,39 @@ their community is really active in their [forum](https://groups.google.com/foru
 
 ## Critisism?
 
-oTree is awesome, myself made something like ~12 experiments with this package, so i need to explain
+oTree is awesome, I already made ~12 experiments with this package, so i need to explain
 why I decided to start new paralel project.
 
 1. **Many languages:** oTree is written in Python, thats fine; it's easy, expressive, and with a big community of programmers. So if you want to create an experiment, most of your logic will be written in this language. In other hand, the templates/pages are coded in [HTML](https://en.wikipedia.org/wiki/HTML) (With the [Django-Templates language](https://docs.djangoproject.com/en/2.2/ref/templates/language/)); if you want more interactive templates and custom styles you will ended needing [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) and [Javascript](https://en.wikipedia.org/wiki/JavaScript). In the end, you will need 4 languages to create a moderate complex programs.
 
 2. **Lack of customization:** In many cases, Django is the best out-of-the-box option for develop
-   anything web-related with Python. But when you try to create your own workflow, maybe you have a problem.
+anything web-related with Python. But when you try to create your own workflow, maybe you have a problem.
 
-   The main idea of chosen any [framework](https://en.wikipedia.org/wiki/Software_framework), is to avoid to design a your own workflow; the problem starts when you try to design your own framework on top of another one. In other other words: you are trying to design your own *flexible-for-your-use-case-workflow* on top of another *flexible-for-another-more-general-use-case-workflow*.
+     The main idea of chosen any [framework](https://en.wikipedia.org/wiki/Software_framework), is to avoid to design a your own workflow; the problem starts when you try to design your own framework on top of another one. In other other words: you are trying to design your own *flexible-for-your-use-case-workflow* on top of another *flexible-for-another-more-general-use-case-workflow*.
 
-   Check this talk [Niklas Meinzer - When Django is too bloated - Specialized Web-Applications with Werkzeug](https://www.youtube.com/watch?v=mXpBuELtpro), for another people with the same problem.
+     Check this talk [Niklas Meinzer - When Django is too bloated - Specialized Web-Applications with Werkzeug](https://www.youtube.com/watch?v=mXpBuELtpro), for another people with the same problem.
 
 
-3. **Experimental features:** Implement   experimental features is necessary to any projects to live a long and happy life (imagine a parallel universe where a new web version of zTree are launched before oTree).
+3. **Experimental features:** Implement  experimental features is necessary to any projects to live a long and happy life (imagine a
+     parallel universe where a new web version of zTree are launched before oTree).
 
-   All the efforts of the oTree community related to new features are to made a the project most simple to use for non-programmers (oTree studio and oTree Hub). I was a little skeptical about to try to remove the code of the process of making code. Normally you create empty shells will you still need to fill with code.
+     All the efforts of the oTree community related to new features are to made a the project most simple to use for non-programmers (oTree studio and oTree Hub). I was a little skeptical about to try to remove the code of the process of making code. Normally you create empty shells will you still need to fill with code.
 
-   In other hand, implement experimental features like artificial intelligence power bots, can be a
-   challenge, modtly because the rigid Synchronous Django-Layer bellow, and the lack of interest or man-power of the community and the core developers.
+     In other hand, implement experimental features like artificial intelligence powered bots, can be a challenge, mostly because the rigid Synchronous Django-Layer bellow, and the lack of interest or man-power of their community.
 
 4. **Classes everywhere:** In january of 2018 I give a full tutorial of Python + oTree in the
-[Bogotá Experimental Economics Workshop](https://www.urosario.edu.co/BEEC-2018/Evento/). Mostly of the contents was easy to explain, except for one concept: **Classes**, object oriented software are useful mostly for the encapsulation property, and in particular for the [MVC pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller). But explain to a non programmer concepts like inheritance, methods, instantiation and state; was the difficult part.
+     [Bogotá Experimental Economics Workshop](https://www.urosario.edu.co/BEEC-2018/Evento/). Mostly of the contents was easy to explain, except for one concept: **Classes**, object oriented software are useful mostly for the encapsulation property, and in particular for the [MVC pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller). But explain to a non programmer concepts like inheritance, methods, instantiation and state; was the difficult part.
 
-   Django model their entire workflow with classes (models, views, management commands and middleware), and this permeates the design of oTree. In most cases the user only want to define a simple sequential commands, but still they need to define a class (with the proper methods and inheritance).
+     Django define their entire workflow with classes (models, views, management commands and middlewares), and this permeates the design of oTree. In most cases the user only want to define simple sequential commands, but still they need to define a class (with the proper methods and inheritance).
 
-Avoid this 4 points (or at least try to) is my main goal as a designer of a more modern approach to create behavioral experiments.
+5.  **Page driven development:** This is the hard one. oTree (and z-Tree) are defined by their pages/stages, not by their subjects. In
+    other words, most of the rules of the game are written inside the pages logic, and Subject/Player only consumes this the data generated for this logic and store it in the database. Even if we think the subjects/players from the [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming) sugested by oTree, the behavior of the players are still dictated from the data injected by the page.
+
+    Why this is important? Maybe, you want to create some facility to provide a way to implement *bots vs human* games, but in this case, yo must mix the logic of the bots, and the real players on the page. Remember: all behavior of the experiment are generated in the page.
+
+    This is a limitation of the MVC pattern.
+
+Avoid this 5 points (or at least try to) is my main goal as a designer of a more modern approach to create behavioral experiments.
 
 
 ## Designing a new framework
@@ -62,10 +69,27 @@ Avoid this 4 points (or at least try to) is my main goal as a designer of a more
 
 ```python
 # lets asume we have some kind of game
-game.user.add_fields(
+game.subjects.fields(
     name=str, age=int, money=game.Money)
 
 ```
+
+```python
+game.define_data(
+    subjects={
+        "name": str,
+        "age": int,
+        "height": float},
+
+    rounds={},
+
+    groups={},
+
+    roles={}
+)
+
+```
+
 
 ### 1. Mapping Python types to SQLAlchemy column types
 
