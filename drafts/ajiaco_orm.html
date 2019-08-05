@@ -94,7 +94,7 @@ the creation of:</p>
 companion application <a href="https://otree.readthedocs.io/en/latest/tutorial/part0_studio.html#tutorial-studio">oTree Studio</a>  (part of <a href="https://www.otreehub.co">oTree hub</a>) is a must;
 their community is really active in their <a href="https://groups.google.com/forum/#!forum/otree">forum</a>, and several experiments was released (and published) with the tool (<a href="https://scholar.google.com/scholar?cites=5704587714172176698&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=es">oTree Citations</a>)</p>
 <h2>Critisism?</h2>
-<p>oTree is awesome, myself made something like ~12 experiments with this package, so i need to explain
+<p>oTree is awesome, I already made ~12 experiments with this package, so i need to explain
 why I decided to start new paralel project.</p>
 <ol>
 <li>
@@ -102,29 +102,50 @@ why I decided to start new paralel project.</p>
 </li>
 <li>
 <p><strong>Lack of customization:</strong> In many cases, Django is the best out-of-the-box option for develop
-   anything web-related with Python. But when you try to create your own workflow, maybe you have a problem.</p>
-</li>
-</ol>
+anything web-related with Python. But when you try to create your own workflow, maybe you have a problem.</p>
 <p>The main idea of chosen any <a href="https://en.wikipedia.org/wiki/Software_framework">framework</a>, is to avoid to design a your own workflow; the problem starts when you try to design your own framework on top of another one. In other other words: you are trying to design your own <em>flexible-for-your-use-case-workflow</em> on top of another <em>flexible-for-another-more-general-use-case-workflow</em>.</p>
 <p>Check this talk <a href="https://www.youtube.com/watch?v=mXpBuELtpro">Niklas Meinzer - When Django is too bloated - Specialized Web-Applications with Werkzeug</a>, for another people with the same problem.</p>
-<ol>
-<li><strong>Experimental features:</strong> Implement   experimental features is necessary to any projects to live a long and happy life (imagine a parallel universe where a new web version of zTree are launched before oTree).</li>
-</ol>
+</li>
+<li>
+<p><strong>Experimental features:</strong> Implement  experimental features is necessary to any projects to live a long and happy life (imagine a
+     parallel universe where a new web version of zTree are launched before oTree).</p>
 <p>All the efforts of the oTree community related to new features are to made a the project most simple to use for non-programmers (oTree studio and oTree Hub). I was a little skeptical about to try to remove the code of the process of making code. Normally you create empty shells will you still need to fill with code.</p>
-<p>In other hand, implement experimental features like artificial intelligence power bots, can be a
-   challenge, modtly because the rigid Synchronous Django-Layer bellow, and the lack of interest or man-power of the community and the core developers.</p>
-<ol>
-<li><strong>Classes everywhere:</strong> In january of 2018 I give a full tutorial of Python + oTree in the
-<a href="https://www.urosario.edu.co/BEEC-2018/Evento/">Bogotá Experimental Economics Workshop</a>. Mostly of the contents was easy to explain, except for one concept: <strong>Classes</strong>, object oriented software are useful mostly for the encapsulation property, and in particular for the <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC pattern</a>. But explain to a non programmer concepts like inheritance, methods, instantiation and state; was the difficult part.</li>
+<p>In other hand, implement experimental features like artificial intelligence powered bots, can be a challenge, mostly because the rigid Synchronous Django-Layer bellow, and the lack of interest or man-power of their community.</p>
+</li>
+<li>
+<p><strong>Classes everywhere:</strong> In january of 2018 I give a full tutorial of Python + oTree in the
+     <a href="https://www.urosario.edu.co/BEEC-2018/Evento/">Bogotá Experimental Economics Workshop</a>. Mostly of the contents was easy to explain, except for one concept: <strong>Classes</strong>, object oriented software are useful mostly for the encapsulation property, and in particular for the <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC pattern</a>. But explain to a non programmer concepts like inheritance, methods, instantiation and state; was the difficult part.</p>
+<p>Django define their entire workflow with classes (models, views, management commands and middlewares), and this permeates the design of oTree. In most cases the user only want to define simple sequential commands, but still they need to define a class (with the proper methods and inheritance).</p>
+</li>
+<li>
+<p><strong>Page driven development:</strong> This is the hard one. oTree (and z-Tree) are defined by their pages/stages, not by their subjects. In
+    other words, most of the rules of the game are written inside the pages logic, and Subject/Player only consumes this the data generated for this logic and store it in the database. Even if we think the subjects/players from the <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a> sugested by oTree, the behavior of the players are still dictated from the data injected by the page.</p>
+<p>Why this is important? Maybe, you want to create some facility to provide a way to implement <em>bots vs human</em> games, but in this case, yo must mix the logic of the bots, and the real players on the page. Remember: all behavior of the experiment are generated in the page.</p>
+<p>This is a limitation of the MVC pattern.</p>
+</li>
 </ol>
-<p>Django model their entire workflow with classes (models, views, management commands and middleware), and this permeates the design of oTree. In most cases the user only want to define a simple sequential commands, but still they need to define a class (with the proper methods and inheritance).</p>
-<p>Avoid this 4 points (or at least try to) is my main goal as a designer of a more modern approach to create behavioral experiments.</p>
+<p>Avoid this 5 points (or at least try to) is my main goal as a designer of a more modern approach to create behavioral experiments.</p>
 <h2>Designing a new framework</h2>
 <h2>The Database abstraction layer</h2>
 <h3>How i imagine want to use the ORM</h3>
 <div class="highlight"><pre><span></span><span class="c1"># lets asume we have some kind of game</span>
-<span class="n">game</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">add_fields</span><span class="p">(</span>
+<span class="n">game</span><span class="o">.</span><span class="n">subjects</span><span class="o">.</span><span class="n">fields</span><span class="p">(</span>
     <span class="n">name</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">money</span><span class="o">=</span><span class="n">game</span><span class="o">.</span><span class="n">Money</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">game</span><span class="o">.</span><span class="n">define_data</span><span class="p">(</span>
+    <span class="n">subjects</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">},</span>
+
+    <span class="n">rounds</span><span class="o">=</span><span class="p">{},</span>
+
+    <span class="n">groups</span><span class="o">=</span><span class="p">{},</span>
+
+    <span class="n">roles</span><span class="o">=</span><span class="p">{}</span>
+<span class="p">)</span>
 </pre></div>
 
 
