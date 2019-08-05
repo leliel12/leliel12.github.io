@@ -10,6 +10,6 @@ Status: published
 
 ## Current
 
-- ### José María Guaimas & Marcos Daniel Henning
-
-      Collaborative Computer Aided Design Application (CoCADA)
+- **José María Guaimas & Marcos Daniel Henning:**
+  Web application for collaborative design of solid models with
+  Lean-Ux approach and agile.
