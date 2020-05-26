@@ -31,3 +31,7 @@ RELATIVE_URLS = True
 THEME = 'themes/elegant'
 
 OUTPUT_PATH = 'output/'
+
+
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
