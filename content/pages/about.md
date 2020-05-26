@@ -38,7 +38,7 @@ multinational corporations to startups, primarily small, focused teams.
 
     Dr. Eng. Juan B. Cabral
     CIFASIS-CONICET
-    email: jbc.cabral /at/ unc /dot/ edu /dot/ ar
+    email: jbcabral /at/ unc /dot/ edu /dot/ ar
 
 
 - LinkedIn: [https://www.linkedin.com/in/juanbcabral
