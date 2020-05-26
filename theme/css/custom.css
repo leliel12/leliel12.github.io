@@ -5,3 +5,12 @@ article div.article-content ul:not(.articles-timeline):not(.related-posts-list) 
     border-bottom: thin dashed #A9A9A9;
     color: #3875d7;
 }
+
+#content-sans-footer > div.navbar.navbar-static-top > div > div > div > ul > li:nth-child(1),
+#content-sans-footer > div.navbar.navbar-static-top > div > div > div > ul > li:nth-last-child(2),
+#content-sans-footer > div.navbar.navbar-static-top > div > div > div > ul > li:nth-last-child(3),
+#content-sans-footer > div.navbar.navbar-static-top > div > div > div > ul > li:nth-last-child(4)
+ {
+    display: none;
+
+}
