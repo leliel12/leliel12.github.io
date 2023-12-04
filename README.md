@@ -1,6 +1,6 @@
 # JBC HomePage
 
-Open: https://leliel2.github.io/
+Open: https://leliel12.github.io/
 
 
 
