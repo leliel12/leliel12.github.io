@@ -1,10 +1,3 @@
-Title: About Me
-Date: 2019-04-08 22:38
-Modified: 2019-04-08 22:38
-Summary: About-Me
-Status: published
-url:
-save_as: index.html
 
 ![Alt Text](images/me.jpg)
 
