@@ -1,0 +1,26 @@
+---
+# https://github.com/pages-themes/cayman
+
+theme: jekyll-theme-cayman
+layout: page
+
+title: "JBC"
+description: "We create quality scientific software"
+
+sitecolor: "#205692"
+logo: assets/imgs/quatrope_logo.png
+favicon: assets/imgs/favicon.ico
+
+license_link: legal
+coc_link: coc
+contact_link: contact
+
+navbar:
+    - title: Projects
+      link: projects
+
+    - title: Publications
+      link: pubs
+
+    - title: People
+      link: people
