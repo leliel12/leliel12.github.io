@@ -11,16 +11,7 @@ sitecolor: "#205692"
 logo: assets/imgs/quatrope_logo.png
 favicon: assets/imgs/favicon.ico
 
-license_link: legal
-coc_link: coc
-contact_link: contact
-
-navbar:
-    - title: Software
-      link: software
-
-    - title: Publications
-      link: publications
-
-    - title: Links
-      link: links
+header_pages:
+  - software.md
+  - publications.md
+  - links.md
