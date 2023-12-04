@@ -1,15 +1,8 @@
----
-# https://github.com/pages-themes/cayman
-
 theme: minima
 layout: page
 
 title: "JBC"
 description: "Personal home page"
-
-sitecolor: "#205692"
-logo: assets/imgs/quatrope_logo.png
-favicon: assets/imgs/favicon.ico
 
 header_pages:
   - software.md
