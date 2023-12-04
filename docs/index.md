@@ -6,7 +6,7 @@ Status: published
 url:
 save_as: index.html
 
-![Alt Text]({static}/pages/images/me.jpg)
+![Alt Text](images/me.jpg)
 
 - Born in [Posadas, Misiones (Argentina)](https://en.wikipedia.org/wiki/Posadas,_Misiones) in 1981.
 - In 2010 I received my degree in software engineering from [UTN-FRC](https://www.frc.utn.edu.ar/)
