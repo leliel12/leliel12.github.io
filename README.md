@@ -1,6 +1,6 @@
-# QuatroPe
+# JBC HomePage
 
-Open: https://quatrope.github.io/
+Open: https://leliel2.github.io/
 
 
 
