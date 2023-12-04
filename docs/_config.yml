@@ -1,8 +1,10 @@
-theme: minima
-layout: page
-
 title: "JBC"
 description: "Personal home page"
+
+theme: minima
+
+minima:
+  skin: dark
 
 header_pages:
   - software.md
