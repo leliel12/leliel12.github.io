@@ -1,19 +1,12 @@
-Title: Publications
-Date: 2019-04-08 22:38
-Modified: 2019-04-08 22:38
-Category: Info
-Tags: pelican, publishing
-Slug: pubs
-Summary: Publications
-Status: published
+# Publications
 
 
 ## My PhD thesis:
 
 Spanish only
 
-- Full Test: [Análisis y diseño de procesos de minería de datos astrofísicos sobre catálogos fotométricos múltiple época.]({static}/pages/tesis/Tesis_.pdf)
-- Slides: [slides.pdf]({static}/pages/tesis/slides.pdf)
+- Full Test: [Análisis y diseño de procesos de minería de datos astrofísicos sobre catálogos fotométricos múltiple época.](tesis/Tesis_.pdf)
+- Slides: [slides.pdf](tesis/slides.pdf)
 
 
 
