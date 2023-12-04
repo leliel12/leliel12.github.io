@@ -9,5 +9,7 @@ minima:
 header_pages:
   - software.md
   - publications.md
+  - courses.md
+  - students.md
   - links.md
 
