@@ -1,11 +1,4 @@
-Title: Software
-Date: 2019-04-08 22:38
-Modified: 2019-04-08 22:38
-Category: Info
-Tags: software, projects
-Slug: software
-Summary: Software
-Status: published
+# Software
 
 
 ----
