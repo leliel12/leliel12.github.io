@@ -4,9 +4,10 @@ description: "Personal home page"
 theme: minima
 
 minima:
-    skin: dark
+  skin: dark
       
-    header_pages:
-      - software.md
-      - publications.md
-      - links.md
+header_pages:
+  - software.md
+  - publications.md
+  - links.md
+
