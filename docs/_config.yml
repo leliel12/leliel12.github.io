@@ -1,12 +1,11 @@
-baseurl: /minima
-remote_theme: jekyll/minima
+remote_theme: https://github.com/jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-seo-tag
 
 title: Juan B Cabral
-description: Personal home page
+description: Personal homepage
 author: JBC
 
 
