@@ -22,5 +22,8 @@ permalink: /courses/
 
 ## Postgraduate courses
 
+- Introducción a la programación HPC con Python y sus aplicaciones al campo de proceso de imágenes (IGulich-UNC)
+  [2022](https://ig.conae.aulavirtual.unc.edu.ar/course/view.php?id=198),
+  [2023]()https://ig.conae.aulavirtual.unc.edu.ar/course/view.php?id=251
 - Diseño de software para cómputo científico (FAMAF-UNC):
   [2019, 2020, 2021, 2022, 2023](https://github.com/leliel12/diseno_sci_sfw)
