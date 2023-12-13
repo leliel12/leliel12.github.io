@@ -1,7 +1,19 @@
 # Students
-    
 
-## Past
+## PhD.
+
+- **Lic. Federico Bustillos**
+
+## Graduate (Masters)
+
+- **Abg. German Cardusa**
+
+- **Cont. Lic. Natalia Van Heerden**
+
+
+## Undergraduate
+
+- **Nicolas Navall**
 
 - **José María Guaimas & Marcos Daniel Henning:**
 
