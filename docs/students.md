@@ -1,9 +1,7 @@
-
 ## PhD.
 
 - **Lic. Federico Bustillos**
-
-    > Identificación automática de vacíos cósmicos, en relevamientos de galaxias de cuarta generación para estimación de parámetros cosmológicos
+    > Automatic Identification of Cosmic Voids in Fourth-Generation Galaxy Surveys for Cosmological Parameter Estimation
     >
     > Universidad Nacional de Córdoba
 
@@ -12,32 +10,25 @@
 ## Graduate (Masters)
 
 - **Abg. German Cardusa**
-
-  > Viabilidad legal y financiera para la implementación de blockchain para la emisión y gestión de seguros
-  >
-  > Universidad Blas Pascal
+    > Legal and Financial Feasibility for the Implementation of Blockchain for the Issuance and Management of Insurance
+    >
+    > Universidad Blas Pascal
 
 - **Cont. Lic. Natalia Van Heerden**
-
-  > Selección estratégica de portafolios de inversión en criptomonedas con base en métodos multicriterio discretos
-  >
-  > Universidad Blas Pascal
+    > Strategic Selection of Cryptocurrency Investment Portfolios Based on Discrete Multicriteria Methods
+    >
+    > Universidad Blas Pascal
 
 ---
 
 ## Undergraduate
 
 - **Nicolas Navall**
-
-  > Métodos alternativos de clustering para la descomposición dinámica de galaxias en simulaciones astrofísicas.
-  >
-  > Universidad Nacional de Rosario
-  
+    > Alternative Clustering Methods for the Dynamic Decomposition of Galaxies in Astrophysical Simulations
+    >
+    > Universidad Nacional de Rosario
 
 - **José María Guaimas & Marcos Daniel Henning:**
-
-    > Web application for collaborative design of solid models with
-    > Lean-Ux approach and agile.
+    > Web Application for Collaborative Design of Solid Models with a Lean-UX Approach and Agile Methodology.
     > 
-    > Universidad Gastón Dachary
-
+    > Universidad Gastón Dachary 
