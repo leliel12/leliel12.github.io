@@ -19,4 +19,4 @@ Dr. Juan B. Cabral
 email: `jbcabral /at/ unc /dot/ edu /dot/ ar`
 
 
-[LinkedIn]((https://www.linkedin.com/in/juanbcabral), [Github](https://github.com/leliel12)
+[LinkedIn](https://www.linkedin.com/in/juanbcabral), [Github](https://github.com/leliel12)
