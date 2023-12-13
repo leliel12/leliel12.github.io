@@ -14,9 +14,9 @@ Currently, I am a research assistant for CONICET
 
 ## Contact
 
-    Dr. Juan B. Cabral
-    [IATE-OAC](https://iate.oac.uncor.edu/), [GVT-CONAE](https://www.argentina.gob.ar/ciencia/conae), [FAMAF-UNC](https://www.famaf.unc.edu.ar/)
-    email: jbcabral /at/ unc /dot/ edu /dot/ ar
+Dr. Juan B. Cabral
+[IATE-OAC](https://iate.oac.uncor.edu/), [GVT-CONAE](https://www.argentina.gob.ar/ciencia/conae), [FAMAF-UNC](https://www.famaf.unc.edu.ar/)
+email: `jbcabral /at/ unc /dot/ edu /dot/ ar`
 
 
 [LinkedIn]((https://www.linkedin.com/in/juanbcabral), [Github](https://github.com/leliel12)
