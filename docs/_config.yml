@@ -1,9 +1,13 @@
-title: Juan B Cabral
-description: Personal home page
-author: JBC
-  
+remote_theme: https://github.com/jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
-theme: minima
+title: Juan B Cabral
+description: Personal homepage
+author: JBC
+
 
 minima:
   skin: auto
@@ -20,4 +24,5 @@ header_pages:
   - courses.md
   - students.md
   - links.md
+
 
