@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Improving Jupyter Autocompletion for Cleaner Interfaces in Scientific Computing"
+title: "Enhancing Jupyter autocompletion with __dir__ customization"
 categories: software, python, decorators
 ---
 
