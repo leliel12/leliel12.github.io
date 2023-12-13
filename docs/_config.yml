@@ -5,6 +5,12 @@ theme: minima
 
 minima:
   skin: solarized
+  social_links:
+    - { platform: github,         user_url: "https://github.com/jekyll/minima" }
+    - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
+    - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
+
       
 header_pages:
   - software.md
