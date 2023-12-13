@@ -1,5 +1,8 @@
-# Students
-
+---
+layout: page
+title: Students
+permalink: /students/
+---
 
 ## PhD.
 
