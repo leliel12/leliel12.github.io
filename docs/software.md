@@ -1,5 +1,8 @@
-# Software
-
+---
+layout: page
+title: Software
+permalink: /software/
+---
 
 ## Scikit-Criteria
 

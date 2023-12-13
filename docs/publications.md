@@ -1,5 +1,9 @@
 # Publications
-
+---
+layout: page
+title: Publications
+permalink: /pubs/
+---
 
 ## My PhD thesis:
 
