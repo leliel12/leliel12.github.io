@@ -1,3 +1,6 @@
+---
+layout: home
+---
 
 ![Alt Text](images/me.jpg)
 
