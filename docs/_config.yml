@@ -1,14 +1,17 @@
-title: Personal home page
-author:
-  name: Juan B Cabral
-  email: your-email@domain.com
+baseurl: /minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
+title: Juan B Cabral
+description: Personal home page
+author: JBC
 
-
-theme: minima
 
 minima:
-  skin: solarized
+  skin: auto
   social_links:
     - { platform: github,         user_url: "https://github.com/jekyll/minima" }
     - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
@@ -22,4 +25,5 @@ header_pages:
   - courses.md
   - students.md
   - links.md
+
 

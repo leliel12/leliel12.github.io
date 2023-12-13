@@ -8,7 +8,7 @@ Currently, I am a research assistant for [CONICET](https://www.conicet.gov.ar/ne
 
 ## Main Research interests
 
-1. Machine learning for astrophysics.
+- Machine learning for astrophysics.
 - Scientific Software Engeenering.
 - Multi-Criteria Decision Making.
 
