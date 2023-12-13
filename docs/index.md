@@ -11,16 +11,12 @@ Currently, I am a research assistant for CONICET
 1. Machine learning for astrophysics.
 -  Scientific Software Engeenering.
 -  Multi-Criteria Decision Making.
--  Experimental Economy.
 
 ## Contact
 
     Dr. Juan B. Cabral
-    CIFASIS-CONICET
+    [IATE-OAC](https://iate.oac.uncor.edu/), [GVT-CONAE](https://www.argentina.gob.ar/ciencia/conae), [FAMAF-UNC](https://www.famaf.unc.edu.ar/)
     email: jbcabral /at/ unc /dot/ edu /dot/ ar
 
 
-- LinkedIn: [https://www.linkedin.com/in/juanbcabral
-](https://www.linkedin.com/in/juanbcabral
-)
-- Github: [https://github.com/leliel12](https://github.com/leliel12)
+[LinkedIn]((https://www.linkedin.com/in/juanbcabral), [Github](https://github.com/leliel12)
