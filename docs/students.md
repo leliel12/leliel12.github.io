@@ -8,6 +8,8 @@
 
 - **Abg. German Cardusa**
 
+  > Viabilidad legal y financiera para la implementación de blockchain para la emisión y gestión de seguros
+
 - **Cont. Lic. Natalia Van Heerden**
 
 
@@ -15,11 +17,15 @@
 
 - **Nicolas Navall**
 
+  > Métodos alternativos de clustering para la descomposición dinámica de galaxias en simulaciones astrofísicas.
+  >
+  > Universidad Nacional de Rosario
+  
+
 - **José María Guaimas & Marcos Daniel Henning:**
 
-    Web application for collaborative design of solid models with
-    Lean-Ux approach and agile.
+    > Web application for collaborative design of solid models with
+    > Lean-Ux approach and agile.
+    > 
+    > Universidad Gastón Dachary
 
-    > Guaimas, J., Henning, M. D., Cabral, J. B., & Ruidías, I. H. (2019). Development of a collaborative web application for
-    > revisions of parametric solid models using the Lean UX approach. Unpublished.
-    > [https://doi.org/10.13140/RG.2.2.22318.46406](https://doi.org/10.13140/RG.2.2.22318.46406)
