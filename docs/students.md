@@ -16,6 +16,12 @@ permalink: /students/
 
 ## Graduate (Masters)
 
+- **Lic. Axel Waldemar Elseser**
+    > Evaluación de Modelos de Segmentación de Imágenes para la identificación de Urbanizaciones Cerradas en Imágenes Satelitales
+    >
+    > *Master in Space Information Applications* -
+    > Universidad Nacional de Córdoba
+
 - **Abg. German Cardusa**
     > Legal and Financial Feasibility for the Implementation of Blockchain for the Issuance and Management of Insurance
     >
