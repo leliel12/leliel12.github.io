@@ -3,7 +3,6 @@ layout: post
 title: "Enhancing Jupyter autocompletion with __dir__ customization"
 categories: software, python, decorators
 ---
-
 In my day-to-day work, I specialize in creating tools for scientific computing, most of which are executed within Jupyter notebooks. One common challenge for new users is grappling with the intricacies of autocompletion, particularly understanding what is essential for effective use. This issue becomes apparent when utilizing autocompletion in scenarios like the following Python code:
 
 ```python
@@ -74,3 +73,4 @@ def f(arr):
 ```
 
 By employing such a mechanism, we can enhance the readability and usability of our scientific computing tools within Jupyter environments. This approach minimizes the exposure of unnecessary elements during autocompletion, promoting a cleaner and more focused interface for users.
+
