@@ -1,2 +1,8 @@
+#!/bin/bash
+set -e
 
-git pull --ff-only && git add -A . && git commit -am updated && git push
+python ./scripts/notebooks_to_post.py;
+git pull --ff-only;
+git add -A .;
+git commit -am updated;
+git push;
