@@ -20,5 +20,3 @@ Currently, I am a research assistant for [CONICET](https://www.conicet.gov.ar/ne
 >
 > email: `jbcabral /at/ unc /dot/ edu /dot/ ar`
 
-
-[LinkedIn](), [Github](https://github.com/leliel12)
