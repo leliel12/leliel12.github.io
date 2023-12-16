@@ -8,7 +8,7 @@ pipenv run python convert_notebooks.py --force
 
 POSTS_DIRECTORY = "docs/_posts/notebooks"
 NOTEBOOKS_DIRECTORY = "docs/_notebooks"
-ASSETS_DIRECTORY = "docs/assets/notebooks"
+ASSETS_DIRECTORY = "docs/_posts/notebooks"
 REPLACEMENT_STRINGS = [("<IPython.core.display.Javascript object>", "")]
 
 
