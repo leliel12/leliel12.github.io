@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 
 ![Alt Text](images/me.jpg)
