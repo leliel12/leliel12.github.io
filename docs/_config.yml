@@ -20,10 +20,12 @@ minima:
 
       
 header_pages:
+  - blog.md
   - publications.md
   - students.md
   - courses.md
   - software.md
   - links.md
+  
 
 
