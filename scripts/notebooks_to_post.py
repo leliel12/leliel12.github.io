@@ -8,8 +8,10 @@ pipenv run python convert_notebooks.py --force
 
 POSTS_DIRECTORY = "docs/_posts/notebooks"
 NOTEBOOKS_DIRECTORY = "docs/_notebooks"
-ASSETS_DIRECTORY = "assets/notebooks"
+ASSETS_DIRECTORY = POSTS_DIRECTORY # "docs/assets/notebooks/"
 REPLACEMENT_STRINGS = [("<IPython.core.display.Javascript object>", "")]
+
+COMMAND = "jupyter nbconvert {notebook_path} --to markdown --ExtractOutputPreprocessor.enabled=False"
 
 
 import os
@@ -89,7 +91,7 @@ def create_posts_path():
 
 
 def convert_to_markdown(notebook_path: str):
-    command = f"jupyter nbconvert {notebook_path} --to markdown"
+    command = COMMAND.format(notebook_path=notebook_path)
     check_output(command, shell = True)
     postprocess_markdown(notebook_path)
 
@@ -151,8 +153,11 @@ def update_markdown_paths(notebook_path: str, contents: str) -> str:
 
     if not ASSETS_DIRECTORY.endswith("/"):
         dest.append("/")
+    
+    result = contents.replace("![png](", "".join(dest))
 
-    return contents.replace("![png](", "".join(dest))
+    return result
+    
 
 
 def main():
