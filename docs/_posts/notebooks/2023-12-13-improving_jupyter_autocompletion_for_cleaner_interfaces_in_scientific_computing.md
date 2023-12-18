@@ -18,7 +18,7 @@ def f(arr):
 
 Upon using Jupyter's autocompletion, the result includes not only `f(arr)` but also `np` (and the path of the module), which is merely a necessary import but not part of my intended "API." 
 
-![image.png](2023-12-13-improving_jupyter_autocompletion_for_cleaner_interfaces_in_scientific_computing_files/f2089bf4-fd99-480c-af27-9789aa73fab0.png)
+![Jupyter Notebook Plot](/assets/notebooks/2023-12-13-improving_jupyter_autocompletion_for_cleaner_interfaces_in_scientific_computing_files/f2089bf4-fd99-480c-af27-9789aa73fab0.png)
 
 These are what I refer to as 'public but private imports,' and they can be bothersome. Concrete examples of this phenomenon can be observed in modules like `sklearn.pipeline` or `inspect`.
 
@@ -35,7 +35,7 @@ def f(arr):
     return _np.asarray(arr) + 1
 ```
 
-![image.png](2023-12-13-improving_jupyter_autocompletion_for_cleaner_interfaces_in_scientific_computing_files/46374433-c732-40d7-9c2e-045eab91087d.png)
+![Jupyter Notebook Plot](/assets/notebooks/2023-12-13-improving_jupyter_autocompletion_for_cleaner_interfaces_in_scientific_computing_files/46374433-c732-40d7-9c2e-045eab91087d.png)
 
 However, with each change of this nature, one must manually search for all instances within functions like `f()` where these private aliases are used.
 
@@ -59,7 +59,7 @@ def __dir__():
     return [attr for attr in globals() if attr not in _hidden]
 ```
 
-![image.png](2023-12-13-improving_jupyter_autocompletion_for_cleaner_interfaces_in_scientific_computing_files/46374433-c732-40d7-9c2e-045eab91087d.png)
+![Jupyter Notebook Plot](/assets/notebooks/2023-12-13-improving_jupyter_autocompletion_for_cleaner_interfaces_in_scientific_computing_files/46374433-c732-40d7-9c2e-045eab91087d.png)
 
 This last option has the advantage of not requiring alterations to the source code where hidden attributes are used. However, developers can still access these attributes if they attempt to do so.
 
