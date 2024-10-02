@@ -12,6 +12,14 @@ Currently, I am a research assistant for [CONICET](https://www.conicet.gov.ar/ne
 - Scientific Software Engeenering.
 - Multi-Criteria Decision Making.
 
+## Support my work
+
+If you find my work helpful, you're welcome to support me by buying me a coffee.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/leliel12)
+
+
+
 ## Contact
 
 > Dr. Juan B. Cabral
