@@ -1,4 +1,3 @@
-# Publications
 ---
 layout: page
 title: Publications
