@@ -4,6 +4,7 @@ title: Students
 permalink: /students/
 ---
 
+
 ## PhD.
 
 - **Lic. Federico Bustillos**
@@ -17,10 +18,17 @@ permalink: /students/
 ## Graduate (Masters)
 
 - **Lic. Axel Waldemar Elseser**
-    > Evaluación de Modelos de Segmentación de Imágenes para la identificación de Urbanizaciones Cerradas en Imágenes Satelitales
+    > Evaluation of Image Segmentation Models for Gated
+    > Community Identification in Satellite Imagery
     >
     > *Master in Space Information Applications* -
     > Universidad Nacional de Córdoba
+
+- **Ing. Federico Torres**
+    > Ad Performance and Return Analysis for Advertising Strategy Design
+    >
+    > *MBA* -
+    > Universidad Blas Pascal
 
 - **Abg. German Cardusa**
     > Legal and Financial Feasibility for the Implementation of Blockchain for the Issuance and Management of Insurance
