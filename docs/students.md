@@ -100,3 +100,7 @@ permalink: /students/
     > Universidad Gastón Dachary
 
     *Defended in 2019*
+
+  ### Colaborations
+
+  - **Franco Schivazappa**
