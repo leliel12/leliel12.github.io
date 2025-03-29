@@ -24,12 +24,6 @@ permalink: /students/
     > *Master in Space Information Applications* -
     > Universidad Nacional de Córdoba
 
-- **Ing. Federico Torres**
-    > Ad Performance and Return Analysis for Advertising Strategy Design
-    >
-    > *MBA* -
-    > Universidad Blas Pascal
-
 - **Abg. German Cardusa**
     > Legal and Financial Feasibility for the Implementation of Blockchain for the Issuance and Management of Insurance
     >
@@ -81,10 +75,12 @@ permalink: /students/
     > Universidad Nacional de Córdoba
 
 - **Nicolas Navall**
-    > Alternative Clustering Methods for the Dynamic Decomposition of Galaxies in Astrophysical Simulations
+    > [Alternative Clustering Methods for the Dynamic Decomposition of Galaxies in Astrophysical Simulations (Spanish only)](https://rephip.unr.edu.ar/items/3189c012-63c3-458e-9938-81432424f486)
     >
     > *Computer Science* -
     > Universidad Nacional de Rosario
+    
+    *Defended in 2024*
 
 - **Jeremías Rodríguez**
     > [Search for improvements in the automatic detection of variable stars (Spanish only)](https://testrephip.unr.edu.ar/items/cb7a80c8-3290-4437-9599-02cd4a20d11b)
