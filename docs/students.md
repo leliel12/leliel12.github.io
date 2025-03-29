@@ -7,6 +7,9 @@ permalink: /students/
 
 ## PhD.
 
+- **Lic. Hernán Rosenfeld**
+- **Lic. Magdalena Borda**
+- **Lic. Paula Pacheco**
 - **Lic. Federico Bustillos**
     > Automatic Identification of Cosmic Voids in Fourth-Generation Galaxy Surveys for Cosmological Parameter Estimation
     >
